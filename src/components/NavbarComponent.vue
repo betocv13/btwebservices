@@ -1,6 +1,4 @@
 <script>
-
-
 export default {
   name: 'NavbarComponent',
 };
@@ -12,29 +10,26 @@ export default {
     <h1 class="logo m-0">BENDITO</h1>
     <!-- Menu Text -->
     <div class="menu-text">
-      <span class="fw-bold">Menu</span>
+      <span class="">Menu</span>
     </div>
   </nav>
 </template>
 
 <style scoped>
-.navbar {
-
-}
-
 .logo {
   font-size: 1.8rem;
   color: #ffffff;
-  font-family: 'CustomFont3', sans-serif; /* Apply Garet font */
+  font-family: 'CustomFont3', sans-serif; 
 }
 
 .menu-text {
   font-size: 1.8rem;
   color: #ffffff;
   cursor: pointer;
+  font-family: 'CustomFont3', sans-serif; 
 }
 
 .menu-text:hover {
-  color: #000; /* Darker text on hover */
+  color: #f97e00; 
 }
 </style>

@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div id="app">
-    <section class="home px-5">
+    <section class="home px-5 vh-100">
 
       <!-- Navbar -->
       <div>
@@ -20,10 +20,12 @@ export default {
       </div>
 
       <!-- Banner -->
-      <div class="banner d-flex align-items-center justify-content-center position-relative">
-        <img src="@/assets/dsm.jpg" alt="Banner Image" class="img-fluid" />
-        <div class="position-absolute text-center text-white" style="z-index: 2;">
-          <h1 class="display-5 fw-bold">Building Websites that Matter</h1>
+      <div class="banner d-flex align-items-center justify-content-center">
+        <div class="w-100 h-100 overflow-hidden position-relative">
+          <img src="@/assets/dsm.jpg" alt="Banner Image" class="img-fluid w-100 h-100" />
+          <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="fs-3 fw-bold">Building Websites that Matter</h1>
+          </div>
         </div>
       </div>
 
@@ -43,21 +45,11 @@ export default {
 
 img {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
   filter: brightness(50%);
 }
 
 .banner {
-  position: relative;
-  height: 80vh; /* Adjusts the height of the banner */
-  overflow: hidden;
-}
-
-.home {
-  height: 100vh;
-
+  height: 80vh;
 }
 
 h1 {
