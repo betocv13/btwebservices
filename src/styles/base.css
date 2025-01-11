@@ -1,0 +1,23 @@
+:root {
+    --opacity: rgba(211, 207, 207, 0.346); /* Adjust the alpha for desired transparency */
+    --white: white;
+    --starter: #cf16a4;
+    --advanced: blue;
+    --background: rgba(0, 0, 0, 0.853);
+  }
+  
+  @font-face {
+    font-family: 'CustomFont1';
+    src: url('../assets/font1.otf') format('opentype'); /* Adjusted relative path */
+  }
+  
+  @font-face {
+    font-family: 'CustomFont2';
+    src: url('../assets/font2.ttf') format('truetype'); /* Adjusted relative path */
+  }
+  @font-face {
+    font-family: 'CustomFont3';
+    src: url('@/assets/Garet-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
