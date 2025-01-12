@@ -3,7 +3,7 @@
     --white: white;
     --starter: #cf16a4;
     --advanced: blue;
-    --background: rgba(0, 0, 0, 0.853);
+    --background: rgb(0, 0, 0);
   }
   
   @font-face {

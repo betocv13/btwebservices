@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar ">
+  <nav class="navbar">
     <!-- Company Name -->
     <h1 class="logo m-0">BENDITO</h1>
     <!-- Menu Text -->
