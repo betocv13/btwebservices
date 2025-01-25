@@ -2,7 +2,8 @@
 import NavbarComponent from './components/NavbarComponent.vue';
 import AboutUsComponent from './components/AboutUsComponent.vue';
 import ContactComponent from './components/ContactComponent.vue';
-import FooterComponent from './components/FooterComponent.vue'
+import FooterComponent from './components/FooterComponent.vue';
+import MyWorkComponent from './components/MyWorkComponent.vue';
 import './styles/base.css';
 
 import LoaderComponent from './components/LoaderComponent.vue';
@@ -16,6 +17,7 @@ export default {
     ServicesComponent,
     ContactComponent,
     FooterComponent,
+    MyWorkComponent,
   },
   data() {
     return {
@@ -53,6 +55,10 @@ export default {
     <section id="about" class="About px-3 px-md-5">
       <AboutUsComponent/>
       <hr class="about-line" />
+    </section>
+
+    <section id="my-work" class="MyWork px-3 px-md-5">
+      <MyWorkComponent/>
     </section>
 
     <section id="services" class="Services px-3 px-md-5">

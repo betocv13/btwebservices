@@ -121,7 +121,8 @@
 }
 
 .contact-form .btn:hover {
-  background-color: #1f16c6;
+  background-color: white;
+  color: black;
 }
 
 /* Fade-in Animations */

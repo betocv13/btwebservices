@@ -20,6 +20,11 @@
           <span class="section-number">2</span>
         </li>
         <hr>
+        <li @click="scrollToSection('my-work')">
+        <span class="section-name">My Work</span>
+        <span class="section-number">3</span>
+        </li>
+        <hr>
         <li @click="scrollToSection('services')">
           <span class="section-name">Services</span>
           <span class="section-number">3</span>
@@ -82,7 +87,7 @@ export default {
 }
 
 .menu-text:hover {
-  color: #eae781;
+  color: #099f48;
 }
 
 /* Fullscreen menu styles */
@@ -119,7 +124,7 @@ export default {
 }
 
 .menu-list li:hover {
-  color: #eae781;
+  color: #099f48;
 }
 
 .section-name {
@@ -150,6 +155,6 @@ hr {
 }
 
 .close-button:hover {
-  color: #eae781;
+  color: #099f48;
 }
 </style>
