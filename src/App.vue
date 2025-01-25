@@ -1,6 +1,8 @@
 <script>
 import NavbarComponent from './components/NavbarComponent.vue';
 import AboutUsComponent from './components/AboutUsComponent.vue';
+import ContactComponent from './components/ContactComponent.vue';
+import FooterComponent from './components/FooterComponent.vue'
 import './styles/base.css';
 
 import LoaderComponent from './components/LoaderComponent.vue';
@@ -12,6 +14,8 @@ export default {
     AboutUsComponent,
     LoaderComponent,
     ServicesComponent,
+    ContactComponent,
+    FooterComponent,
   },
   data() {
     return {
@@ -34,25 +38,33 @@ export default {
 
 <!-- Main Content -->
 <div v-if="!isLoading">
-  <section class="home px-3 px-md-5 vh-100">
-    <NavbarComponent class="py-4" />
+  <section id="home" class="home px-3 px-md-5 vh-100">
+    <NavbarComponent class="py-4 px-3" />
     <div class="banner d-flex align-items-center justify-content-center">
       <div class="w-100 h-100 overflow-hidden position-relative">
         <img src="@/assets/dsm.jpg" alt="Banner Image" class="banner-img img-fluid w-100 h-100" />
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-          <h1 class="fs-2 fw-bold">Building Websites that Matter</h1>
+          <h1 class="fs-2">Crafting Digital Experiences</h1>
         </div>
       </div>
     </div>
   </section>
 
-    <section class="About px-3 px-md-5">
+    <section id="about" class="About px-3 px-md-5">
       <AboutUsComponent/>
       <hr class="about-line" />
     </section>
 
-    <section class="Services px-3 px-md-5">
+    <section id="services" class="Services px-3 px-md-5">
       <ServicesComponent/>
+    </section>
+
+    <section id="contact" class="Contact px-3 px-md-5">
+      <ContactComponent/>
+    </section>
+
+    <section id="Footer" class="Footer px-3 px-md-5">
+      <FooterComponent/>
     </section>
   </div>
 </div>
@@ -101,7 +113,8 @@ img {
   animation: fadeUp 10s ease-in-out 8s forwards;
 }
 h1 {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'CustomFont3', sans-serif; 
+max-width:500px;
 }
 @keyframes fadeUp {
   0% {
@@ -116,7 +129,7 @@ h1 {
 
 /* About --------------- */
 .About{
-  height: 30vh;
+  height: 18vh;
 }
 .about-line {
   border-top: 1px solid white; /* Adjust thickness as needed */
