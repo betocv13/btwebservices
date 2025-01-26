@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-section vh-100 d-flex align-items-center">
+  <div class="contact-section d-flex align-items-center">
     <div class="container">
       <div class="row">
         <!-- Stay in Touch Section -->
@@ -79,9 +79,11 @@
 <style scoped>
 /* Section Layout */
 .contact-section {
+  min-height: 100vh;
   background-color: var(--background);
   color: white;
   padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 /* Stay in Touch Section */
@@ -139,6 +141,9 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .contact-section {
+    margin-bottom: 4rem; /* Add spacing between the contact section and footer */
+  }
   .row {
     flex-direction: column; /* Change to normal column layout */
   }

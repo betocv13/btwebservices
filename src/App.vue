@@ -40,13 +40,13 @@ export default {
 
 <!-- Main Content -->
 <div v-if="!isLoading">
-  <section id="home" class="home px-3 px-md-5 vh-100">
+  <section id="home" class="home px-3 px-md-5">
     <NavbarComponent class="py-4 px-3" />
     <div class="banner d-flex align-items-center justify-content-center">
       <div class="w-100 h-100 overflow-hidden position-relative">
-        <img src="@/assets/dsm.jpg" alt="Banner Image" class="banner-img img-fluid w-100 h-100" />
+        <img src="@/assets/px.jpg" alt="Banner Image" class="banner-img img-fluid w-100 h-100" />
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
-          <h1 class="fs-2">Crafting Digital Experiences</h1>
+          <h1 class="custom-header">Crafting Digital Experiences</h1>
         </div>
       </div>
     </div>
@@ -90,7 +90,11 @@ img {
   object-fit: cover;
   filter: brightness(50%);
 }
-
+.custom-header {
+  font-size: 2.0rem;
+  font-family: 'CustomFont3', sans-serif;
+  font-weight: bold;
+}
 .banner {
   height: 80vh;
 }
@@ -98,6 +102,9 @@ img {
   object-fit: cover;
   filter: brightness(50%);
   animation: growIn 1.5s ease-in-out forwards;
+}
+.home{
+  min-height: 100vh;
 }
 
 @keyframes growIn {
@@ -118,10 +125,6 @@ img {
 .banner-text {
   animation: fadeUp 10s ease-in-out 8s forwards;
 }
-h1 {
-  font-family: 'CustomFont3', sans-serif; 
-max-width:500px;
-}
 @keyframes fadeUp {
   0% {
     transform: translateY(20px);
@@ -135,9 +138,14 @@ max-width:500px;
 
 /* About --------------- */
 .About{
-  height: 18vh;
+  min-height: 18vh;
 }
 .about-line {
   border-top: 1px solid white; /* Adjust thickness as needed */
+}
+@media (max-width: 768px) {
+  .custom-header {
+    font-size: 1.5rem; 
+  }
 }
 </style>

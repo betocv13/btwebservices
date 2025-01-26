@@ -14,7 +14,7 @@ export default {
         </div>
 
         <!-- Center Section -->
-        <div class="col-md-4 footer-section">
+        <div class="col-md-4 footer-section text-md-center">
           <p class="footer-contact">
             betobendito@outlook.com<br />
             Des Moines, IA
@@ -22,7 +22,7 @@ export default {
         </div>
 
         <!-- Right Section -->
-        <div class="col-md-4 footer-section">
+        <div class="col-md-4 footer-section text-md-end">
           <p class="footer-rights">
             ©2025 Bendito Web Studio<br />
             All rights reserved.<br />
@@ -62,6 +62,7 @@ export default {
 @media (max-width: 768px) {
   .footer .row {
     flex-direction: column; /* Stack sections vertically */
+
   }
 
   .footer-section {

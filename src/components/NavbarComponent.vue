@@ -87,7 +87,7 @@ export default {
 }
 
 .menu-text:hover {
-  color: #099f48;
+  color: blue;
 }
 
 /* Fullscreen menu styles */
@@ -124,7 +124,7 @@ export default {
 }
 
 .menu-list li:hover {
-  color: #099f48;
+  color: blue;
 }
 
 .section-name {
@@ -155,6 +155,6 @@ hr {
 }
 
 .close-button:hover {
-  color: #099f48;
+  color: rgb(40, 52, 224);
 }
 </style>

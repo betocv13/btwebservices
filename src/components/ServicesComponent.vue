@@ -23,6 +23,7 @@ export default {
 
 <template>
   <section class="services px-3 px-md-5 text-white">
+    <h2 class="section-header mb-5 text-center">Services</h2>
     <div class="container">
       <!-- Service Section 1: Basic Plan -->
       <div class="row align-items-center mb-5 mt-0 mt-md-0 fade-in" ref="fadeElements">
@@ -65,7 +66,7 @@ export default {
       </div>
 
       <!-- Service Section 3: Pro Plan -->
-      <div class="row align-items-center mb-5 fade-in" ref="fadeElements">
+      <div class="row align-items-center mb-0 fade-in" ref="fadeElements">
         <div class="col-md-6 order-2 order-md-1">
           <h2 class="service-header mt-4 mt-md-0">Pro Plan</h2>
           <p class="service-description">
@@ -94,7 +95,11 @@ export default {
   transform: translateY(50px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
+.section-header {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'CustomFont3', sans-serif;
+}
 /* State when the element is visible */
 .fade-in.visible {
   opacity: 1;
@@ -108,7 +113,6 @@ export default {
 .service-header {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 .service-description {

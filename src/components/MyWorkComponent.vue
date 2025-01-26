@@ -21,7 +21,7 @@ export default {
             <img src="@/assets/2.png" alt="Work 2" class="work-image img-fluid" />
           </div>
           <div class="col-md-4">
-            <p class="work-description">Web Development</p>
+            <p class="work-description">Web/UX Development</p>
             <img src="@/assets/1.png" alt="Work 3" class="work-image img-fluid" />
           </div>
         </div>
@@ -38,19 +38,19 @@ export default {
               <img src="@/assets/2.png" alt="Work 2" class="work-image img-fluid" />
             </div>
             <div class="carousel-item text-center">
-              <p class="work-description">Web Development</p>
+              <p class="work-description">Web/UX Development</p>
               <img src="@/assets/1.png" alt="Work 3" class="work-image img-fluid" />
             </div>
           </div>
           <!-- Carousel Controls -->
           <button class="carousel-control-prev" type="button" data-bs-target="#myWorkCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myWorkCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+  <span class="control-icon">&lt;</span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#myWorkCarousel" data-bs-slide="next">
+  <span class="control-icon">&gt;</span>
+  <span class="visually-hidden">Next</span>
+</button>
         </div>
       </div>
     </section>
@@ -63,19 +63,34 @@ export default {
 }
 
 .section-header {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   font-family: 'CustomFont3', sans-serif;
 }
-
+.work-description{
+  font-family: 'CustomFont3', sans-serif;
+}
 .work-image {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1); /* Ensures controls are visible on dark backgrounds */
+.control-icon {
+  font-size: 2rem; /* Adjust size */
+  color: white; /* White text for the icon */
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Optional: Set button size */
+  height: 40px;
+  text-align: center;
+}
+
+.control-icon:hover {
+  color: blue;
+
+  transition: 0.3s ease;
 }
 </style>
