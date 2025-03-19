@@ -27,12 +27,12 @@
         <hr>
         <li @click="scrollToSection('services')">
           <span class="section-name">Services</span>
-          <span class="section-number">3</span>
+          <span class="section-number">4</span>
         </li>
         <hr>
         <li @click="scrollToSection('contact')">
           <span class="section-name">Contact</span>
-          <span class="section-number">4</span>
+          <span class="section-number">5</span>
         </li>
         <hr>
       </ul>
@@ -156,5 +156,11 @@ hr {
 
 .close-button:hover {
   color: rgb(40, 52, 224);
+}
+@media (max-width: 768px) {
+.menu-text,
+.logo  {
+  font-size: 1.2rem;
+}
 }
 </style>

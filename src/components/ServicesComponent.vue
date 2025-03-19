@@ -81,7 +81,7 @@ export default {
           <p class="service-price">$800</p>
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
-          <img src="@/assets/Peoplan.jpeg" alt="Pro Plan" class="img-fluid service-image" />
+          <img src="@/assets/Peoplan.jpg" alt="Pro Plan" class="img-fluid service-image" />
         </div>
       </div>
     </div>

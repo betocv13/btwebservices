@@ -44,7 +44,7 @@ export default {
     <NavbarComponent class="py-4 px-3" />
     <div class="banner d-flex align-items-center justify-content-center">
       <div class="w-100 h-100 overflow-hidden position-relative">
-        <img src="@/assets/px.jpg" alt="Banner Image" class="banner-img img-fluid w-100 h-100" />
+        <img src="@/assets/webbanner.jpg" alt="Banner Image" class="banner-img img-fluid w-100 h-100" />
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
           <h1 class="custom-header">Crafting Digital Experiences</h1>
         </div>
@@ -145,7 +145,7 @@ img {
 }
 @media (max-width: 768px) {
   .custom-header {
-    font-size: 1.5rem; 
+    font-size: 1.0rem; 
   }
 }
 </style>

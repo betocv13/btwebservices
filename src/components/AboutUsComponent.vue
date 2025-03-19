@@ -14,7 +14,8 @@ export default {
         <!-- Column for the Text -->
         <div class="col-12 col-md-6">
             <p class="text">
-            Bendito Web Studio is my professional web services studio dedicated to delivering high-quality, responsive, and creative designs. Specialize in crafting stunning, user-friendly websites tailored to meet the unique needs of my clients.
+            At Bendito Web Studio, I’m dedicated to delivering high-quality, responsive, and visually stunning designs. I specialize in crafting user-friendly websites tailored to meet each client’s unique needs.
+
         </p>
             
         </div>
