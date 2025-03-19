@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+
+:root {
+    --opacity: rgba(211, 207, 207, 0.346); /* Adjust the alpha for desired transparency */
+    --white: white;
+    --basic: #005eff;
+    --plus: #e90bb9;
+    --pro: #06820a;
+    --background: rgb(0, 0, 0);
+  }
+  
+  /* Use Google Font */
+.mrs-saint-font {
+  font-family: 'Mrs Saint Delafield', cursive;
+}
+  @font-face {
+    font-family: 'CustomFont1';
+    src: url('../assets/font1.otf') format('opentype'); /* Adjusted relative path */
+  }
+  
+  @font-face {
+    font-family: 'CustomFont3';
+    src: url('@/assets/Garet-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CustomFont4';
+    src: url('../assets/font4.ttf') format('truetype'); /* Adjusted relative path */
+  }
